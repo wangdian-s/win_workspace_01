@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wd.springboot</groupId>
+    <artifactId>thymeleaf</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!--依赖管理，引入以后在申明其它dependency的时候就不需要version了
+    （没有在dependencies里面管理的依赖自然需要声明版本号）
+     -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+    </parent>
+
+    <!--默认使用嵌套式的Tomcat作为Web容器对外提供HTTP服务，默认端口8080对外监听和提供服务。
+    spring-boot场景启动器；帮我们导入了web模块正常运行所依赖的组件；
+    Spring Boot将所有的功能场景都抽取出来，做成一个个的starters（启动器），只需要在项目里面
+    引入这些starter相关场景的所有依赖都会导入进来。要用什么功能就导入什么场景的启动器
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    </dependencies>
+
+</project>

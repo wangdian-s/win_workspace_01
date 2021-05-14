@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>主页</title>
+</head>
+<body >
+<p th:text="'Hello, ' + ${title}"><br/>
+<p th:each="book : ${books}">
+<li th:text="${book}"></li>
+</p> <!--/*/ 专有注释 /*/-->
+</body>
+</html>

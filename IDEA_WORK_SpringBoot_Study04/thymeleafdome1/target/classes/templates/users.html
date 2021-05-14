@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>主页</title>
+</head>
+<body>
+<!--#th:each 迭代数据，如 数组、List、Map 等-->
+<p th:each="user : ${users}">
+    name=<span th:text="${user.name}"/>,age=<span th:text="${user.age}"/>
+</p>
+<!--#th:if 条件为 true 时,显示模板⽚段，否则不显示 -->
+<p th:if="${isMarry}">已婚</p>
+<!--#th:switch 与 Java 中的 switch 语句等效，有条件地显示匹配的内容-->
+<div th:switch="${scode}">
+    <p th:case="0">管理员</p>
+    <p th:case="1">操作员</p>
+    <p th:case="*">未知用户</p>
+</div>
+</body>
+</html>

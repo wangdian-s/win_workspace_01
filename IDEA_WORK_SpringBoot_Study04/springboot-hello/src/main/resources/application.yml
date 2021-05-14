@@ -1,0 +1,14 @@
+user:
+  lastName: fromyml
+  age: 18
+  boss: false
+  birth: 2017/12/12
+  maps: {qq: 1000 , mobile: 13811002233}
+  lists:
+  - lisi
+  - zhaoliu
+  dog:
+    name: 小狗
+    age: 12
+
+  address: shanghai
